@@ -13,6 +13,11 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
+    alias: {
+      assets: path.resolve(__dirname, 'src/assets/'),
+      components: path.resolve(__dirname, 'src/components/'),
+      const: path.resolve(__dirname, 'src/constants/'),
+    },
     extensions: ['.js', '.jsx'],
   },
   module: {

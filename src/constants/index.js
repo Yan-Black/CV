@@ -56,6 +56,19 @@ export const projects = [
   },
   {
     category: {
+      categoryName: 'React/Redux',
+      prjcts: [
+        {
+          id: 'songbird',
+          name: 'Songbird',
+          github: 'https://github.com/Yan-Black/songbird',
+          project: 'https://yan-black-songbird.netlify.app/',
+        },
+      ],
+    },
+  },
+  {
+    category: {
       categoryName: 'React/Redux/TypeScript',
       prjcts: [
         {
@@ -131,6 +144,16 @@ export const enDescriptions = {
       'Three languages localization',
       'Custom loaders',
       'Catching errors',
+      'Responsibility',
+    ],
+  },
+  songbird: {
+    description: `React/Redux project created with custom setup.
+    Simple audio quiz, with counting score and win page.`,
+    features: [
+      'Counting score',
+      'Custom audio player',
+      'Win page',
       'Responsibility',
     ],
   },

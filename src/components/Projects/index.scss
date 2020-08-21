@@ -1,17 +1,11 @@
-$codewars-link: #5DADE2;
-$link-hover: #34495E;
-$bg-person: #F2F3F4;
-
-.cv-projects-header {
-  margin-bottom: 1vw;
-}
+@import '../../constants/variables.scss';
 
 .cv-projects-list {
-  font-size: 20px;
+  font-size: $desktopFont;
 }
 
 .cv-projects-link {
-  text-indent: 40px;
+  text-indent: $desktopIndent;
 }
 
 .cv-project-handler {
@@ -28,7 +22,7 @@ $bg-person: #F2F3F4;
   justify-content: center;
   color: $link-hover;
   transition: .2s;
-  margin: .5vw 0 0 20px;
+  margin-left: 20px;
   &:focus {
     outline: none;
   }
@@ -37,15 +31,15 @@ $bg-person: #F2F3F4;
       display: inline;
     }
     background-color: $link-hover;
-    color: #FFF;
-    padding: 0 .5vw;
+    color: $tooltip;
+    padding: 0 10px;
   }
 }
 
 .cv-project-handler-active {
   background-color: $link-hover;
-  color: #FFF;
-  padding: 0 .5vw;
+  color: $tooltip;
+  padding: 0 10px;
   &:hover {
     .cv-tooltip {
       display: none;
@@ -79,9 +73,9 @@ $bg-person: #F2F3F4;
 }
 
 .cv-projects-description-container {
-  padding: 1vw;
-  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
-  background-color: $bg-person;
+  padding: $desktopPadding;
+  box-shadow: inset 0px 0px 5px $shadow;
+  background-color: $inner-bg;
   border-radius: 5px;
   width: 65%;
   display: flex;

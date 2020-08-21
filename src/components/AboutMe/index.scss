@@ -1,24 +1,33 @@
-$link-hover: #34495E;
-$info-text: #5D6D7E;
+@import '../../constants/variables.scss';
 
 .cv-about-me, .cv-projects, .cv-english {
-  margin-top: 2vw;
+  margin-top: $desktopBlockMargin;
   border-radius: 5px;
   background-color: #FFF;
-  padding: 1vw 2vw;
+  padding: $desktopPadding;
   width: 100%;
-  filter: drop-shadow(0 0 2px black);
-  color: $info-text;
+  filter: drop-shadow(0 0 2px $shadow);
+  color: $main-text;
 }
 
 .cv-about-me-header, .cv-projects-header, .cv-english-header {
-  padding-bottom: .5vw;
-  margin-bottom: .5vw;
+  padding-bottom: $headerDesktopBottom;
+  margin-bottom: $headerDesktopBottom;
   border-bottom: 2px solid $link-hover;
 }
 
 .cv-about-me-info {
-  font-size: 20px;
-  text-indent: 40px;
+  font-size: $desktopFont;
+  text-indent: $desktopIndent;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .cv-about-me, .cv-projects, .cv-english {
+    margin-top: $tabletBlockMargin;
+  }
+
+  .cv-about-me-header, .cv-projects-header, .cv-english-header {
+
+  }
 }

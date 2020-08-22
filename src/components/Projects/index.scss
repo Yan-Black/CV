@@ -1,0 +1,114 @@
+@import '../../constants/variables.scss';
+
+.cv-projects-list {
+  font-size: $desktopFont;
+}
+
+.cv-projects-link {
+  text-indent: $desktopIndent;
+}
+
+.cv-project-handler {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  height: 25px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $link-hover;
+  transition: .2s;
+  margin-left: 20px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    .cv-tooltip {
+      display: inline;
+    }
+    background-color: $link-hover;
+    color: $tooltip;
+    padding: 0 10px;
+  }
+}
+
+.cv-project-handler-active {
+  background-color: $link-hover;
+  color: $tooltip;
+  padding: 0 10px;
+  &:hover {
+    .cv-tooltip {
+      display: none;
+    }
+  }
+}
+
+.projects-link {
+  text-decoration: none;
+  color: $codewars-link;
+  transition: .2s;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    opacity: .5;
+  }
+}
+
+.cv-projects-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-projects-info {
+  width: 30%;
+}
+
+.description-placeholder {
+  font-size: 40px;
+}
+
+.cv-projects-description-container {
+  padding: $desktopPadding;
+  box-shadow: inset 0px 0px 5px $shadow;
+  background-color: $inner-bg;
+  border-radius: 5px;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .cv-projects-main {
+    flex-direction: column;
+  }
+
+  .cv-projects-info {
+    width: 100%;
+    height: 200px;
+    padding: 15px 0;
+    overflow-x: scroll;
+    box-shadow: inset 0px 0px 5px $shadow;
+    border-radius: 5px;
+    margin-bottom: $mobileBlockMargin;
+  }
+
+  .cv-projects-list {
+    width: max-content;
+    margin: auto;
+  }
+
+  .cv-projects-description-container {
+    width: 100%;
+    height: 500px;
+  }
+
+  .description-placeholder {
+    font-size: 36px;
+  }
+}

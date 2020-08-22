@@ -1,0 +1,36 @@
+@import '../../constants/variables.scss';
+
+.cv-about-me, .cv-projects, .cv-english {
+  margin-top: $desktopBlockMargin;
+  border-radius: 5px;
+  background-color: #FFF;
+  padding: $desktopPadding;
+  width: 100%;
+  filter: drop-shadow(0 0 2px $shadow);
+  color: $main-text;
+}
+
+.cv-about-me-header, .cv-projects-header, .cv-english-header {
+  padding-bottom: $headerDesktopBottom;
+  margin-bottom: $headerDesktopBottom;
+  border-bottom: 2px solid $link-hover;
+}
+
+.cv-about-me-info {
+  font-size: $desktopFont;
+  text-indent: $desktopIndent;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .cv-about-me, .cv-projects, .cv-english {
+    margin-top: $tabletBlockMargin;
+  }
+}
+
+@media (max-width: 500px) {
+  .cv-about-me, .cv-projects, .cv-english {
+    margin-top: $mobileBlockMargin;
+    padding: $mobilePadding;
+  }
+}

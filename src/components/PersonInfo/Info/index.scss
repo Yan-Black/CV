@@ -1,0 +1,121 @@
+@import '../../../constants/variables.scss';
+
+.cv-info {
+  width: 100%;
+  height: auto;
+  box-shadow: inset 0px 0px 5px $shadow;
+  border-radius: 5px;
+  margin-left: $desktopBlockMargin;
+  padding: $desktopPadding;
+  background-color: $inner-bg;
+  color: $main-text;
+}
+
+.info-header {
+  padding-bottom: $headerDesktopBottom;
+  margin-bottom: $headerDesktopBottom;
+  border-bottom: 2px solid $link-hover;
+}
+
+h1 {
+  font-size: $desktopH1;
+}
+
+h2 {
+  font-size: $desktopH2;
+}
+
+.person-data {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.cv-technologies, .cv-codewars {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cv-technologies-list {
+  font-size: $desktopFont;
+}
+
+.cv-codewars {
+  background-color: $main-bg;
+  box-shadow: inset 0px 0px 5px $shadow;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: $headerDesktopBottom;
+}
+
+.cv-codewars-link {
+  text-decoration: none;
+  color: $codewars-link;
+  transition: .2s;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    opacity: .5;
+  }
+}
+
+.cv-codewars-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: $tabletH1;
+  }
+
+  h2 {
+    font-size: $tabletH2;
+  }
+
+  .cv-info {
+    margin-left: $tabletBlockMargin;
+    padding: 10px 15px;
+  }
+
+  .cv-technologies {
+    justify-content: space-around;
+  }
+
+  .cv-technologies-list {
+    font-size: $tabletFont;
+  }
+}
+
+@media (max-width: 767px) {
+  .cv-info {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .person-data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cv-technologies {
+    margin-bottom: $tabletBlockMargin;
+    width: 100%;
+  }
+
+  .cv-codewars {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: $mobileH1;
+  }
+
+  h2 {
+    font-size: $mobileH2;
+  }
+}

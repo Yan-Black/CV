@@ -92,5 +92,30 @@ h2 {
 }
 
 @media (max-width: 767px) {
+  .cv-info {
+    margin-left: 0;
+    width: 100%;
+  }
 
+  .person-data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cv-technologies {
+    margin-bottom: $tabletBlockMargin;
+    width: 100%;
+  }
+
+  .cv-codewars {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: $mobileH1;
+  }
+
+  h2 {
+    font-size: $mobileH2;
+  }
 }

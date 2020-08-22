@@ -26,8 +26,11 @@
   .cv-about-me, .cv-projects, .cv-english {
     margin-top: $tabletBlockMargin;
   }
+}
 
-  .cv-about-me-header, .cv-projects-header, .cv-english-header {
-
+@media (max-width: 500px) {
+  .cv-about-me, .cv-projects, .cv-english {
+    margin-top: $mobileBlockMargin;
+    padding: $mobilePadding;
   }
 }

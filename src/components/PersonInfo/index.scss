@@ -87,6 +87,49 @@
     margin-top: $tabletBlockMargin;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+  }
+
+  .cv-person {
+    margin-bottom: $tabletBlockMargin;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cv-avatar {
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .cv-contacts {
+    width: 100%;
+    height: auto;
+  }
+
+  .cv-contacts-list {
+    flex-direction: column;
+    justify-content: space-between;
+    width: max-content;
+    margin: auto;
+  }
+
+  .cv-link {
+    margin: 7px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .cv-person-info {
+    padding: 4vw;
+  }
+
+  .cv-link {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+  }
+
+  .cv-person {
+    margin-bottom: $mobileBlockMargin;
   }
 }

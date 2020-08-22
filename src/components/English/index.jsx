@@ -26,7 +26,7 @@ const English = () => (
         <h3 className="cv-english-title">Presentation on english: </h3>
         <ReactPlayer
           url="https://www.youtube.com/watch?v=91nQjFoXOPw&t=23s"
-          width="500px"
+          className="cv-player"
         />
       </div>
     </div>

@@ -1,3 +1,5 @@
+@import '../../constants/variables.scss';
+
 .cv-english {
   margin-bottom: 2vw;
 }
@@ -14,3 +16,36 @@
 .cv-english-tests-list {
   font-size: 20px;
 }
+
+.cv-player {
+  width: 500px !important;
+}
+
+@media (max-width: 768px) {
+  .cv-english-tests-list {
+    margin-bottom: $tabletBlockMargin;
+  }
+
+  .cv-english-main {
+    flex-direction: column;
+  }
+
+  .cv-english-presentation {
+    width: 100%;
+    margin: auto;
+   }
+
+  .cv-player {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
+
+// @media (max-width: 767px) {
+//   .cv-english-presentation {
+//     display: none;
+//   }
+// }

@@ -1,9 +1,15 @@
+@import '../../constants/variables.scss';
+
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   user-select: none;
   box-sizing: border-box;
+}
+
+body {
+  background: $inner-bg;
 }
 
 .cv-wrapper {

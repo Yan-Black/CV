@@ -4,15 +4,15 @@ import { projects } from '../../constants';
 import './index.scss';
 
 const Projects = () => {
-  const [isDescOpen, setIsDescOpen] = useState(false);
+  const [descOpen, setDescOpen] = useState(false);
   const [desc, setDesc] = useState('');
   const clickHandler = (e) => {
-    const { target } = e;
-    if (target.id) {
-      setDesc(target.id);
-      setIsDescOpen(true);
+    const { target: { id } } = e;
+    if (id) {
+      setDesc(id);
+      setDescOpen(true);
     } else {
-      setIsDescOpen(false);
+      setDescOpen(false);
     }
   };
   return (
@@ -39,7 +39,7 @@ const Projects = () => {
                     <button
                       type="button"
                       className={
-                        isDescOpen && desc === prjct.id
+                        descOpen && desc === prjct.id
                           ? 'cv-project-handler cv-project-handler-active'
                           : 'cv-project-handler'
                       }
@@ -75,7 +75,7 @@ const Projects = () => {
           ))}
         </div>
         <div className="cv-projects-description-container">
-          {isDescOpen
+          {descOpen
             ? <Description desc={desc} />
             : (
               <span className="description-placeholder">

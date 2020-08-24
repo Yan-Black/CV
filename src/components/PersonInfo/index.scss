@@ -115,6 +115,11 @@
 
   .cv-link {
     margin: 7px 0;
+    &:hover {
+      .cv-tooltip {
+        display: none;
+      }
+    }
   }
 }
 

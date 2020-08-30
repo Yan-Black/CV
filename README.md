@@ -4,7 +4,7 @@ Functional components and hooks approach was used.
 #### CV deploy link [CV](https://yan-black-cv.netlify.app/).
 
 ### Used Libraries
-* Redux
+* React
 
 ### Preprocessors
 * SASS

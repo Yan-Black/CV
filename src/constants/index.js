@@ -149,6 +149,7 @@ export const enDescriptions = {
   },
   songbird: {
     description: `React/Redux project created with custom setup.
+    Functional components and hooks approach was used.
     Simple audio quiz, with counting score and win page.`,
     features: [
       'Counting score',
